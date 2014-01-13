@@ -7,9 +7,5 @@ set nocompatible ruler laststatus=2 showcmd showmode number
 set incsearch ignorecase smartcase hlsearch
 set shortmess+=I
 
-
-
-
-
-colorscheme elflord
+colorscheme molokai
 
