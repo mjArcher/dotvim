@@ -1,4 +1,4 @@
-ginclude "LevelSet.h"
+include "LevelSet.h"
 using namespace std;
 
 LevelSet::LevelSet(){}
