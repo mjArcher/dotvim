@@ -8,10 +8,10 @@ set incsearch ignorecase smartcase hlsearch
 set shortmess+=I
 
 set t_Co=256 "set 256 colours"
-"colorscheme molokai
+colorscheme molokai
 "colorscheme grb256
 "colorscheme wombat
-colorscheme elflord
+"colorscheme elflord
 
 "Key mappings
 "NERD mappings - this doesn't seem to be working
