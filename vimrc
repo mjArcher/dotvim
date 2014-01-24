@@ -36,4 +36,20 @@ set comments=sl:/*,mb:\ *,elx:\ */
 "assigning the mapleader variable - for future <leader> mappings
 let mapleader = ","
 
+"quick directory
+"type :e %%/ on the command line will expand to :e /some/path/. 
+cabbr <expr> %% expand('%:p:h')
+
+
+
+
+
+
+
+
+
+
+
+
+
 

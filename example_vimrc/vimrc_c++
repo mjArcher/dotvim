@@ -1,12 +1,11 @@
-M Configuration File
- 2 “ Description: Optimized for C/C++ development, but useful also for other things.
- 3 “ Author: Gerhard Gappmeier
- 4 “
- 5 
- 6 ” set UTF-8 encoding
- 7 set enc=utf-8
- 8 set fenc=utf-8
- 9 set termencoding=utf-8
+Example Configuration File
+ “ Description: Optimized for C/C++ development, but useful also for other things.
+ “ Author: Gerhard Gappmeier
+  
+set UTF-8 encoding
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
 ” disable vi compatibility (emulation of old bugs)
 set nocompatible
 ” use indentation of previous line
