@@ -40,16 +40,11 @@ let mapleader = ","
 "type :e %%/ on the command line will expand to :e /some/path/. 
 cabbr <expr> %% expand('%:p:h')
 
+"changing vimrc after saved session
+set ssop-=options    " do not store global and local values in a session
+set ssop-=folds      " do not store folds"
 
-
-
-
-
-
-
-
-
-
-
-
-
+noremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
