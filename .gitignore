@@ -3,4 +3,6 @@
 *.[hpp]
 *~
 *.swp
+*.swn
+*.swo
 
