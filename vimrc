@@ -48,3 +48,8 @@ noremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
+"Open new tab the firefox way 
+nnoremap <C-t> :tabnew<CR>
+"Change current working directory to where file exists
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
