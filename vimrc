@@ -9,6 +9,16 @@ set shortmess+=I
 
 set t_Co=256 "set 256 colours"
 colorscheme molokai
+"dark
+" syntax enable
+" set background=dark
+" colorscheme solarized
+
+"light
+" syntax enable
+" set background=light
+" colorscheme solarized
+
 "colorscheme grb256
 "colorscheme wombat
 "colorscheme elflord
@@ -23,7 +33,7 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 
 "intelligent comments"
-set comments=sl:/*,mb:\ *,elx:\ */  
+" set comments=sl:/*,mb:\ *,elx:\ */  
 "Have also installed the bundle: Commentary, use gc and variants
 
 " Install DoxygenToolkit from http://www.vim.org/scripts/script.php?script_id=987
