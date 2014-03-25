@@ -1,12 +1,12 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set nocompatible ruler laststatus=2 showcmd showmode number
 set incsearch ignorecase smartcase hlsearch
 set shortmess+=I
 
+set ts=2
 set t_Co=256 "set 256 colours"
 colorscheme molokai
 "dark
@@ -62,4 +62,9 @@ nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 nnoremap <C-t> :tabnew<CR>
 "Change current working directory to where file exists
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+"resize splits more quickly
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+endif
 
