@@ -25,7 +25,7 @@ colorscheme molokai
 
 "Key mappings
 "NERD mappings - this doesn't seem to be working
-filetype plugin on 
+" filetype plugin on 
 
 "Keep all temporary and backup files in one place
 set backup
@@ -67,4 +67,7 @@ if bufwinnr(1)
   map + <C-W>+
   map - <C-W>-
 endif
+"tab completion
+set wildmode=longest,list,full
+set wildmenu
 
