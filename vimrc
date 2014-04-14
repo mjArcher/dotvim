@@ -5,7 +5,6 @@ set shiftwidth=2
 set nocompatible ruler laststatus=2 showcmd showmode number
 set incsearch ignorecase smartcase hlsearch
 set shortmess+=I
-
 set ts=2
 set t_Co=256 "set 256 colours"
 colorscheme molokai
@@ -70,4 +69,5 @@ endif
 "tab completion
 set wildmode=longest,list,full
 set wildmenu
-
+"Nerdtree browser
+map <F3> :NERDTreeToggle <CR>
