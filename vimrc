@@ -1,5 +1,9 @@
+"pathogen
+call pathogen#infect() 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+"basic appearance
 set tabstop=2
 set shiftwidth=2
 set nocompatible ruler laststatus=2 showcmd showmode number
@@ -71,3 +75,6 @@ set wildmode=longest,list,full
 set wildmenu
 "Nerdtree browser
 map <F3> :NERDTreeToggle <CR>
+"commentary
+autocmd FileType apache set commentstring=#\ %s
+
