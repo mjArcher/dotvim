@@ -1,5 +1,5 @@
 "pathogen
-call pathogen#infect() 
+" call pathogen#infect() 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -28,7 +28,6 @@ colorscheme molokai
 
 "Key mappings
 "NERD mappings - this doesn't seem to be working
-" filetype plugin on 
 
 "Keep all temporary and backup files in one place
 set backup
@@ -77,4 +76,6 @@ set wildmenu
 map <F3> :NERDTreeToggle <CR>
 "commentary
 autocmd FileType apache set commentstring=#\ %s
+filetype plugin on 
+
 
