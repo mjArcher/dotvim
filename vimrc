@@ -78,4 +78,5 @@ map <F3> :NERDTreeToggle <CR>
 autocmd FileType apache set commentstring=#\ %s
 filetype plugin on 
 
-
+"allows the switching of files without the need to save
+set hidden
