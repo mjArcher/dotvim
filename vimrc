@@ -23,8 +23,8 @@ colorscheme molokai
 " colorscheme solarized
 
 "colorscheme grb256
-"colorscheme wombat
-"colorscheme elflord
+" colorscheme wombat
+" colorscheme elflord
 
 "Key mappings
 "NERD mappings - this doesn't seem to be working
@@ -80,3 +80,13 @@ filetype plugin on
 
 "allows the switching of files without the need to save
 set hidden
+
+"to read 
+" 
+" http://vim.wikia.com/wiki/Moving_lines_up_or_down
+
+" keybindings for windowswap 
+
+let g:windowswap_map_keys = 0 "prevent default bindings
+nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR>
+nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
