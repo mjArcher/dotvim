@@ -76,6 +76,8 @@ set wildmenu
 map <F3> :NERDTreeToggle <CR>
 "commentary
 autocmd FileType apache set commentstring=#\ %s
+autocmd FileType mat set commentstring=%\
+
 filetype plugin on 
 
 
