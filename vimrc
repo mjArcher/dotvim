@@ -1,6 +1,6 @@
 "pathogen
 call pathogen#infect() 
-"call pathogen#runtime_append_all_bundles()
+call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 "basic appearance
@@ -85,8 +85,27 @@ set hidden
 " 
 " http://vim.wikia.com/wiki/Moving_lines_up_or_down
 
-" keybindings for windowswap 
+" keybindings for windowswap: ,yw to yank and ,pw to paste
 
 let g:windowswap_map_keys = 0 "prevent default bindings
-nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR>
+nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR> 
 nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
+
+"move between vim windows
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+"set minimum window height to 0
+set wmh=0
+"alternate tab navigation
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+" Alternatively use
+" "nnoremap th :tabnext<CR>
+" "nnoremap tl :tabprev<CR>
+" "nnoremap tn :tabnew<CR>
