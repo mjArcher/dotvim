@@ -20,5 +20,5 @@
 	path = bundle/powerline
 	url = https://github.com/Lokaltog/powerline.git
 [submodule "bundle/vim-airline"]
-	path = /bundle/vim-airline
+	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
