@@ -1,12 +1,4 @@
 let g:netrw_dirhistmax  =10
-<<<<<<< HEAD
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/lsc/zeushome/ma595/Dropbox/2013-2014/Code/Solid/KevinElastic'
-let g:netrw_dirhist_2='/lsc/zeushome/ma595/Dropbox/2013-2014/Code/Solid/KevinElastic/Output'
-let g:netrw_dirhist_3='/lsc/zeushome/ma595/Dropbox/2013-2014/Code/Solid/KevinElastic'
-let g:netrw_dirhist_4='/lsc/zeushome/ma595/Dropbox/2013-2014/Code/Solid/KevinElastic/Inputs'
-let g:netrw_dirhist_5='/lsc/zeushome/ma595/Dropbox/2013-2014/Code/Solid/KevinElastic'
-=======
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =2
 let g:netrw_dirhist_1='/home/matthew/Work/2013-2014/Machine/Code/exercise1/mlclass-ex1-005/mlclass-ex1'
->>>>>>> 0314584eae700ea1bca4d1609aa4ca0418cec258
+let g:netrw_dirhist_2='/local/data/public/ma595/cns_amr/CNS_AMR_Multimaterial'

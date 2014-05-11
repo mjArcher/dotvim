@@ -11,6 +11,7 @@ set incsearch ignorecase smartcase hlsearch
 set shortmess+=I
 set ts=2
 set t_Co=256 "set 256 colours"
+colorscheme smyck
 colorscheme molokai
 "dark
 " syntax enable
@@ -99,14 +100,14 @@ map <C-K> <C-W>k<C-W>_
 "set minimum window height to 0
 set wmh=0
 "alternate tab navigation
-nnoremap th  :tabfirst<CR>
-nnoremap tj  :tabnext<CR>
-nnoremap tk  :tabprev<CR>
-nnoremap tl  :tablast<CR>
-nnoremap tt  :tabedit<Space>
-nnoremap tn  :tabnext<Space>
-nnoremap tm  :tabm<Space>
-nnoremap td  :tabclose<CR>
+" nnoremap th  :tabfirst<CR>
+" nnoremap tj  :tabnext<CR>
+" nnoremap tk  :tabprev<CR>
+" nnoremap tl  :tablast<CR>
+" nnoremap tt  :tabedit<Space>
+" nnoremap tn  :tabnext<Space>
+" nnoremap tm  :tabm<Space>
+" nnoremap td  :tabclose<CR>
 " Alternatively use
 " "nnoremap th :tabnext<CR>
 " "nnoremap tl :tabprev<CR>
