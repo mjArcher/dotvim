@@ -1,9 +1,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/delmitmate"]
-	path = bundle/delmitmate
-	url = git://github.com/Raimondi/delimitMate.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -22,3 +19,18 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/gruvbox"]
+	path = bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "bundle/csa"]
+	path = bundle/csa
+	url = https://github.com/godlygeek/csapprox.git
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/Notes"]
+	path = bundle/Notes
+	url = https://github.com/xolox/vim-notes.git
+[submodule "bundle/misc"]
+	path = bundle/misc
+	url = https://github.com/xolox/vim-misc.git
