@@ -26,6 +26,9 @@ colorscheme molokai
 "colorscheme grb256
 " colorscheme wombat
 " colorscheme elflord
+"
+hi cCustomFunc  gui=bold guifg=yellowgreen
+hi cCustomClass gui=reverse guifg=#00FF00
 
 "Key mappings
 "NERD mappings - this doesn't seem to be working
