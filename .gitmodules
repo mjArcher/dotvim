@@ -40,3 +40,6 @@
 [submodule "bundle/markdown-folding"]
 	path = bundle/markdown-folding
 	url = https://github.com/nelstrom/vim-markdown-folding.git
+[submodule "bundle/windowswap"]
+	path = bundle/windowswap
+	url = git://github.com/wesQ3/vim-windowswap
