@@ -1,10 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/matthew/Work/2013-2014/Machine/Code/exercise1/mlclass-ex1-005/mlclass-ex1'
-let g:netrw_dirhist_2='/local/data/public/ma595/cns_amr/CNS_AMR_Multimaterial'
-let g:netrw_dirhist_3='/home/matthew/.xmonad'
-let g:netrw_dirhist_4='/home/matthew/.dot/dotvim/colors'
-let g:netrw_dirhist_5='/home/matthew/.dot/dotvim/bundle/vim-colors-solarized'
-let g:netrw_dirhist_6='/home/matthew/.fontconfig'
-let g:netrw_dirhist_7='/home/matthew/.vim'
-let g:netrw_dirhist_8='/home/matthew/.dot/dotvim/bundle'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/local/data/public/ma595/cns_amr/CNS_AMR_Multimaterial/validationSettings'
+let g:netrw_dirhist_2='/local/data/public/ma595/cns_amr/CNS_AMR_Multimaterial/modules/MixedRiemannSolver/SolidEuler'
+let g:netrw_dirhist_3='/lsc/zeushome/ma595/dotfiles_old/.dot'
+let g:netrw_dirhist_4='/lsc/zeushome/ma595/.dot/xmonad'

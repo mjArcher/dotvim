@@ -12,11 +12,12 @@ set shortmess+=I
 set ts=2
 set t_Co=256 "set 256 colours"
 " colorscheme smyck
-" colorscheme molokai
+colorscheme molokai
+colorscheme jellybeans
 
-colorscheme gruvbox
-let g:gruvbox_italic=0
-set background=dark
+" let g:gruvbox_italic=0
+" set background=dark
+" colorscheme gruvbox
 
 "dark
 " option name default optional ———————————————— g:solarized_termcolors= 16 | 256
@@ -31,7 +32,7 @@ set background=dark
 " let g:solarized_bold=1
 " let g:solarized_termcolors=256
 " syntax enable
-" set background=dark
+" set background=light
 " colorscheme solarized
 
 " "light
@@ -44,8 +45,7 @@ set background=dark
 " colorscheme wombat
 " colorscheme elflord
 "
-hi cCustomFunc  gui=bold guifg=yellowgreen
-hi cCustomClass gui=reverse guifg=#00FF00
+" hi cCustomFunc  gui=bold guifg=yellowgreen hi cCustomClass gui=reverse guifg=#00FF00
 
 "Key mappings
 "NERD mappings - this doesn't seem to be working
@@ -109,10 +109,16 @@ set hidden
 " http://vim.wikia.com/wiki/Moving_lines_up_or_down
 
 " keybindings for windowswap: ,yw to yank and ,pw to paste
-
 let g:windowswap_map_keys = 0 "prevent default bindings
 nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR> 
 nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
+
+" binding to centre screen by pressing space
+nmap <space> zz
+
+" remapping search so that it centres on the middle of the screen
+nmap n nzz
+nmap N Nzz
 
 "move between vim windows
 map <C-J> <C-W>j<C-W>_
