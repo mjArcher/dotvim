@@ -13,7 +13,17 @@ set ts=2
 set t_Co=256 "set 256 colours"
 " colorscheme smyck
 colorscheme molokai
-colorscheme jellybeans
+" colorscheme jellybeans
+
+" indent for different filetypes
+filetype plugin indent on
+set smartindent
+
+"fortran stuff
+let fortran_fixed_source=1
+
+nmap <S-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_source<CR>:set syntax=text<CR>:set syntax=fortran<CR>
+nmap <C-F> :filetype detect<CR>
 
 " let g:gruvbox_italic=0
 " set background=dark
