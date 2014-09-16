@@ -9,6 +9,10 @@ set shiftwidth=2
 set nocompatible ruler laststatus=2 showcmd showmode number
 set incsearch ignorecase smartcase hlsearch
 set shortmess+=I
+set expandtab
+set smarttab
+set shiftwidth=2
+set softtabstop=2
 set ts=2
 set t_Co=256 "set 256 colours"
 " colorscheme smyck
@@ -19,11 +23,26 @@ colorscheme molokai
 filetype plugin indent on
 set smartindent
 
-"fortran stuff
-let fortran_fixed_source=1
-
+" fortran stuff
 nmap <S-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_source<CR>:set syntax=text<CR>:set syntax=fortran<CR>
 nmap <C-F> :filetype detect<CR>
+
+let fortran_do_enddo=3
+let fortran_more_precise=3
+syntax enable
+
+let s:extfname = expand("%:e")
+if s:extfname ==? "f90"
+  let fortran_free_source=1
+  unlet! fortran_fixed_source
+else
+  let fortran_fixed_source=1
+  unlet! fortran_free_source
+endif
+
+let fortran_do_enddo=1
+let fortran_more_precise=1
+let fortran_have_tabs=1
 
 " let g:gruvbox_italic=0
 " set background=dark
