@@ -13,7 +13,7 @@ set ts=2
 set t_Co=256 "set 256 colours"
 " colorscheme smyck
 colorscheme molokai
-colorscheme jellybeans
+" colorscheme jellybeans
 
 " let g:gruvbox_italic=0
 " set background=dark
