@@ -1,10 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/local/data/public/ma595/cns_amr/CNS_AMR_Multimaterial/validationSettings'
-let g:netrw_dirhist_2='/local/data/public/ma595/cns_amr/CNS_AMR_Multimaterial/modules/MixedRiemannSolver/SolidEuler'
-let g:netrw_dirhist_3='/lsc/zeushome/ma595/dotfiles_old/.dot'
-let g:netrw_dirhist_4='/lsc/zeushome/ma595/.dot/xmonad'
-let g:netrw_dirhist_5='/etc/bash_completion.d'
-let g:netrw_dirhist_6='/lsc/zeushome/ma595/Code/Web/Projects/CV/_includes'
-let g:netrw_dirhist_7='./_includes'
-let g:netrw_dirhist_8='/lsc/zeushome/ma595/Code/Web/Projects/CV/_includes'
+let g:netrw_dirhist_cnt =0

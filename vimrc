@@ -1,3 +1,6 @@
+"determine start up time 
+" vim --startuptime vim.log
+" time vim +:q
 "pathogen
 call pathogen#infect() 
 " call pathogen#runtime_append_all_bundles()
@@ -18,6 +21,8 @@ set t_Co=256 "set 256 colours"
 " colorscheme smyck
 colorscheme molokai
 " colorscheme jellybeans
+" disable certain plugins
+let g:pathogen_disabled = ["airline"]
 
 " indent for different filetypes
 filetype plugin indent on
@@ -27,7 +32,8 @@ set smartindent
 set mouse=a
 
 " fortran stuff
-nmap <S-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_source<CR>:set syntax=text<CR>:set syntax=fortran<CR>
+" shift+F to set syntax to fortran
+nmap <M-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_source<CR>:set syntax=text<CR>:set syntax=fortran<CR>
 nmap <C-F> :filetype detect<CR>
 
 let fortran_do_enddo=3
@@ -46,6 +52,19 @@ endif
 let fortran_do_enddo=1
 let fortran_more_precise=1
 let fortran_have_tabs=1
+
+set cursorline
+
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
+
+" :hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+" :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+" :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
 
 " let g:gruvbox_italic=0
 " set background=dark
