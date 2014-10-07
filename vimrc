@@ -23,6 +23,9 @@ colorscheme molokai
 filetype plugin indent on
 set smartindent
 
+" enable copying of stuff
+set mouse=a
+
 " fortran stuff
 nmap <S-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_source<CR>:set syntax=text<CR>:set syntax=fortran<CR>
 nmap <C-F> :filetype detect<CR>
