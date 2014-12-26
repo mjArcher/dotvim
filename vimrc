@@ -1,4 +1,6 @@
-"etermine start up time 
+
+
+"Hello determine start up time 
 " vim --startuptime vim.log
 " time vim +:q
 "pathogen
