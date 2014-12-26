@@ -1,4 +1,4 @@
-"determine start up time 
+"etermine start up time 
 " vim --startuptime vim.log
 " time vim +:q
 "pathogen
@@ -33,8 +33,19 @@ set mouse=a
 
 " fortran stuff
 " shift+F to set syntax to fortran
+"
 nmap <M-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_source<CR>:set syntax=text<CR>:set syntax=fortran<CR>
+nmap <M-C> :set syntax=cpp<CR>
 nmap <C-F> :filetype detect<CR>
+
+
+" fix meta-keys which generate <Esc>a .. <Esc>z
+let c='a'
+while c <= 'z'
+  exec "set <M-".toupper(c).">=\e".c
+  exec "imap \e".c." <M-".toupper(c).">"
+  let c = nr2char(1+char2nr(c))
+endw
 
 let fortran_do_enddo=3
 let fortran_more_precise=3
@@ -60,6 +71,9 @@ augroup CursorLine
   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
   au WinLeave * setlocal nocursorline
 augroup END
+
+set noswapfile
+set nobackup
 
 " :hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 " :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
@@ -167,6 +181,8 @@ nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
 " binding to centre screen by pressing space
 nmap <space> zz
 
+" binding to toggle line numbers
+nmap <C-N><C-N> :set invnumber<CR>
 " remapping search so that it centres on the middle of the screen
 nmap n nzz
 nmap N Nzz
@@ -189,3 +205,4 @@ set wmh=0
 " "nnoremap th :tabnext<CR>
 " "nnoremap tl :tabprev<CR>
 " "nnoremap tn :tabnew<CR>
+
