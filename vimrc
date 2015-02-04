@@ -20,9 +20,9 @@ set shiftwidth=2
 set softtabstop=2
 set ts=2
 set t_Co=256 "set 256 colours"
+
 " colorscheme smyck
-colorscheme molokai
-" colorscheme jellybeans
+colorscheme jellybeans
 " disable certain plugins
 let g:pathogen_disabled = ["airline"]
 
@@ -116,6 +116,12 @@ set nobackup
 
 "Key mappings
 "NERD mappings - this doesn't seem to be working
+"
+" open in new 
+let NERDTreeMapOpenInTab='<ENTER>'
+let NERDTreeMapOpenInTab='\r'
+"the follwing line sync NERD to current directory
+ map <leader>r :NERDTreeFind<cr> 
 
 "Keep all temporary and backup files in one place
 set backup
@@ -188,6 +194,10 @@ nmap <C-N><C-N> :set invnumber<CR>
 " remapping search so that it centres on the middle of the screen
 nmap n nzz
 nmap N Nzz
+
+" current time 
+nmap <F2> :echo 'Current time is ' . strftime('%c')<CR>
+nmap <C-P> :echo expand('%:p') <CR>
 
 "move between vim windows
 map <C-J> <C-W>j<C-W>_
