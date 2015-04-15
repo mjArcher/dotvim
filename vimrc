@@ -19,8 +19,8 @@ set softtabstop=2
 set ts=2
 set t_Co=256 "set 256 colours"
 " colorscheme smyck
-colorscheme molokai
-" colorscheme jellybeans
+" colorscheme molokai
+colorscheme jellybeans
 " disable certain plugins
 let g:pathogen_disabled = ["airline"]
 
