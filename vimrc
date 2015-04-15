@@ -22,6 +22,7 @@ set ts=2
 set t_Co=256 "set 256 colours"
 
 " colorscheme smyck
+" working correct
 colorscheme jellybeans
 " disable certain plugins
 let g:pathogen_disabled = ["airline"]
