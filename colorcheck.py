@@ -4,7 +4,7 @@
 # modified by crncosta@carloscosta.org to fit my output needs
 
 import sys
-import os
+import os 
 
 def echo(msg):
     os.system('echo -n "' + str(msg) + '"')
