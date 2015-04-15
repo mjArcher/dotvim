@@ -28,10 +28,19 @@ let g:pathogen_disabled = ["airline"]
 
 " indent for different filetypes
 filetype plugin indent on
+
+" automatic indentation
+filetype indent on 
+
 set smartindent
 
 " enable copying of stuff
 set mouse=a
+
+" change what happens when vi is closed 
+set t_ti=""
+
+" Plugin 'syntax/gnuplot.vim'
 
 " fortran stuff
 " shift+F to set syntax to fortran
@@ -159,6 +168,7 @@ nnoremap <C-t> :tabnew<CR>
 "Change current working directory to where file exists
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 "resize splits more quickly
+nnoremap gm :call cursor(0, len(getline('.'))/2)<cr> 
 if bufwinnr(1)
   map + <C-W>+
   map - <C-W>-
@@ -170,7 +180,10 @@ set wildmenu
 map <F3> :NERDTreeToggle <CR>
 "commentary
 autocmd FileType apache set commentstring=#\ %s
-autocmd FileType mat set commentstring=%\
+" autocmd FileType mat set commentstring=%\
+autocmd FileType gnuplot set commentstring=#\ %s " this now works !
+
+autocmd FileType matlab set commentstring=%\ %s " this now works !
 
 filetype plugin on 
 
@@ -185,6 +198,9 @@ set hidden
 let g:windowswap_map_keys = 0 "prevent default bindings
 nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR> 
 nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
+
+" paste in vim without moving the cursor
+noremap p p`[
 
 " binding to centre screen by pressing space
 nmap <space> zz
