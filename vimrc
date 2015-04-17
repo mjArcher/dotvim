@@ -50,6 +50,7 @@ nmap <M-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_s
 nmap <M-C> :set syntax=cpp<CR>
 nmap <C-F> :filetype detect<CR>
 
+autocmd FileType tex setlocal spell spelllang=en_gb
 
 " fix meta-keys which generate <Esc>a .. <Esc>z
 let c='a'
