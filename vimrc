@@ -48,6 +48,7 @@ set t_ti=""
 "
 nmap <M-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_source<CR>:set syntax=text<CR>:set syntax=fortran<CR>
 nmap <M-C> :set syntax=cpp<CR>
+nmap <M-S> :set syntax=sh<CR>
 nmap <C-F> :filetype detect<CR>
 
 autocmd FileType tex setlocal spell spelllang=en_gb
