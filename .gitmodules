@@ -45,4 +45,5 @@
 	url = git://github.com/wesQ3/vim-windowswap
 [submodule "bundle/vim-tags"]
 	path = bundle/vim-tags
-	url = https://github.com/szw/vim-tags.git
+  url = https://github.com/szw/vim-tags.git
+  ignore = dirty
