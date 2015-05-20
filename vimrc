@@ -1,5 +1,3 @@
-
-
 "Hello determine start up time 
 " vim --startuptime vim.log
 " time vim +:q
@@ -7,6 +5,9 @@
 call pathogen#infect() 
 " call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+" set command history
+set history=1000
 
 "basic appearance
 set tabstop=2
@@ -24,10 +25,37 @@ set t_Co=256 "set 256 colours"
 " colorscheme smyck
 " working correct
 colorscheme jellybeans
-" disable certain plugins
-let g:pathogen_disabled = ["airline"]
+" set background=none
 
-" indent for different filetypes
+set encoding=utf-8
+
+" disable certain plugins
+" let g:pathogen_disabled = ["airline"]
+" Enable vim-airline
+" airline customisations
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+" let g:airline_section_y       "(fileencoding, fileformat)
+
+" let g:airline_left_sep = '▶'
+" let g:airline_right_sep = '◀' 
+" let g:airline#extensions#tabline#left_sep = '>'
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" let g:airline_theme             = 'powerlineish'
+" let g:airline_theme             = 'kolor'
+let g:airline_theme             = 'laederon'
+" 
+let g:airline_enable_branch     = 1
+let g:airline_enable_syntastic  = 1
+let g:airline#extensions#whitespace#trailing_format = 'trailing[%s]'
+let g:airline_detect_whitespace = 0
+
+" indent for different filetypes (required by markdown-folding)
 filetype plugin indent on
 
 " automatic indentation
@@ -51,6 +79,7 @@ nmap <M-C> :set syntax=cpp<CR>
 nmap <M-S> :set syntax=sh<CR>
 nmap <C-F> :filetype detect<CR>
 
+" turns the spell checker on when a tex file is being modified
 autocmd FileType tex setlocal spell spelllang=en_gb
 
 " fix meta-keys which generate <Esc>a .. <Esc>z
@@ -132,6 +161,10 @@ set nobackup
 " open in new 
 let NERDTreeMapOpenInTab='<ENTER>'
 let NERDTreeMapOpenInTab='\r'
+let g:NERDTreeDirArrows=1
+if &termencoding !=# 'utf-8' 
+  let NERDTreeDirArrows = 0 
+endif 
 "the follwing line sync NERD to current directory
  map <leader>r :NERDTreeFind<cr> 
 
@@ -236,4 +269,20 @@ set wmh=0
 " "nnoremap th :tabnext<CR>
 " "nnoremap tl :tabprev<CR>
 " "nnoremap tn :tabnew<CR>
+"
+highlight Normal guibg=none ctermbg=none
+highlight NonText ctermbg=none
 
+" function ShowSpaces(...)
+"   let @/='\v(\s+$)|( +\ze\t)'
+"   let oldhlsearch=&hlsearch
+"   if !a:0
+"     let &hlsearch=!&hlsearch
+"   else
+"     let &hlsearch=a:1
+"   end
+"   return oldhlsearch
+" endfunction
+
+" command -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
+" nnoremap <F12>     :ShowSpaces 1<CR>
